@@ -1,0 +1,88 @@
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1030;
+  box-shadow: 0 0.2rem 1rem #9c9c9c; }
+  header nav {
+    background-color: #ff4835; }
+    header nav ul li {
+      padding: 0.4rem; }
+
+main {
+  margin-top: 120px; }
+  main .seccionCarousel {
+    border-bottom: 1px solid #dee2e6; }
+  main h1, main h2 {
+    font-size: 26px; }
+  main .carousel {
+    width: 400px;
+    margin-bottom: 3rem; }
+  main .tendencias img:hover {
+    transform: scale(102%);
+    transition: 0.3s; }
+  main .recienAgregados img:hover {
+    transform: scale(102%);
+    transition: 0.3s; }
+  main .instrucciones {
+    background-color: #ff4835;
+    padding: 4rem;
+    box-shadow: 0 0.2rem 1rem #9c9c9c; }
+  main .formIframe {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center; }
+    main .formIframe .btn-primary {
+      background-color: #ff4835;
+      border-color: #ff4835; }
+      main .formIframe .btn-primary:hover {
+        background-color: #ff6d5d; }
+
+.botonesSiguiente {
+  text-align: center; }
+  .botonesSiguiente a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #ff4835;
+    padding: 8px 18px;
+    margin: 5px 8px;
+    color: white; }
+    .botonesSiguiente a:hover {
+      background-color: #ff6d5d; }
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ff4835;
+  box-shadow: 0 0.2rem 1rem #9c9c9c; }
+  .footerGrid .copy {
+    font-size: 12px; }
+  .footerGrid .sobreNosDiv {
+    margin-bottom: 3rem; }
+    .footerGrid .sobreNosDiv h4 {
+      padding-bottom: 1rem; }
+    .footerGrid .sobreNosDiv #sobreNos {
+      max-width: 400px; }
+  .footerGrid .contactInfo {
+    display: block; }
+  .footerGrid .linkRedes {
+    text-decoration: none;
+    display: block; }
+    .footerGrid .linkRedes:hover {
+      text-decoration: underline; }
+
+@media only screen and (min-width: 1441px) {
+  .footerGrid {
+    display: flex;
+    justify-content: space-between; } }
+
+@media only screen and (max-width: 575px) {
+  .mapaG, .hide2 {
+    display: none; } }
+
+@media only screen and (max-width: 992px) {
+  .hide1 {
+    display: none; } }

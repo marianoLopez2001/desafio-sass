@@ -1,0 +1,119 @@
+//IMPORTS
+
+@import "utilities/variables";
+
+//INICIO DE ESTILOS
+
+header {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+    box-shadow: $shadow;
+    nav {
+        background-color: $color-principal;
+        ul {
+            li {
+                padding: 0.4rem;
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 120px;
+    .seccionCarousel {
+        border-bottom: $border;
+    }
+    h1, h2 {
+        font-size: 26px;
+    }
+    .carousel {
+        width: 400px;
+        margin-bottom: 3rem;
+    }
+    .tendencias {
+        img {
+            &:hover {
+                transform: scale(102%);
+                transition: 0.3s;
+            }
+        }
+    }
+    .recienAgregados {
+        img {
+            &:hover {
+                transform: scale(102%);
+                transition: 0.3s;
+            }
+        }
+    }
+    .instrucciones {
+        background-color: $color-principal;
+        padding: 4rem;
+        box-shadow: $shadow;
+    }
+    .formIframe {       
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+        align-items: center;
+        .btn-primary {
+            background-color: $color-principal;
+            border-color: $color-principal;
+            &:hover {
+                background-color: #ff6d5d;
+            }
+        }
+    }
+}
+
+.botonesSiguiente {
+    text-align: center;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 8px;
+        background-color: #ff4835;    
+        padding: 8px 18px; 
+        margin: 5px 8px;
+        color: white;  
+        &:hover {
+            background-color: #ff6d5d;
+        }
+    }
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $color-principal;
+    box-shadow: $shadow;
+    .copy {
+        font-size: 12px;
+    }
+    .sobreNosDiv {
+        margin-bottom: 3rem;
+        h4 {
+            padding-bottom: 1rem;
+        }
+        #sobreNos {
+            max-width: 400px;
+        }
+    }
+    .contactInfo {
+        display: block;
+    }
+    .linkRedes {
+        text-decoration: none;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+//IMPORT MEDIA QUERIES
+
+@import "utilities/mediaqueries";

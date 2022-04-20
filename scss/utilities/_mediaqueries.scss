@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1441px) {
+    .footerGrid {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .mapaG, .hide2 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .hide1 {
+        display: none;
+    }
+}
